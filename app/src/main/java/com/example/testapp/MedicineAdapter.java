@@ -67,7 +67,7 @@ public class MedicineAdapter extends BaseAdapter {
             case ALL:
                 // Вывод только тех строк, где type равен null или сегодняшнему дню недели
                 for (Medicine medicine : medicines) {
-                    if (medicine.getType() == null || today.equalsIgnoreCase(medicine.getType())) {
+                    if (medicine.getType() == null || today.equalsIgnoreCase(medicine.getType()) || medicine.getType().equals("Каждый день")) {
                         filteredMedicines.add(medicine);
                     }
                 }

@@ -284,11 +284,8 @@ public class PillsNew extends AppCompatActivity {
 
                 Log.d(LOG_TAG, edText.getText().toString()+ editTextNum2.getText().toString()+" "+type+ timeData);
 
-                for (Medicine a:medicines
-                     ) {
-                    Log.d(LOG_TAG,a.getName().toString()+a.getTabletCount().toString()+a.getTimeInterval());
-                    Toast.makeText(this, "Успешно сохранено!", Toast.LENGTH_SHORT).show();
-                    finish();
+                Toast.makeText(this, "Успешно сохранено!", Toast.LENGTH_SHORT).show();
+                finish();
                 }
             }
         }

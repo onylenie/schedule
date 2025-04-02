@@ -250,13 +250,8 @@ public class ScheduleNew extends AppCompatActivity {
 
                 Log.d(LOG_TAG, edText.getText().toString()+ " " + timeData);
 
-                for (Medicine a:medicines
-                ) {
-                    Log.d(LOG_TAG,a.getName().toString()+a.getTabletCount().toString()+a.getTimeInterval());
-                    Toast.makeText(this, "Успешно сохранено!", Toast.LENGTH_SHORT).show();
-                    finish();
-
-                }
+                Toast.makeText(this, "Успешно сохранено!", Toast.LENGTH_SHORT).show();
+                finish();
 
                 Log.d(LOG_TAG, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
             }

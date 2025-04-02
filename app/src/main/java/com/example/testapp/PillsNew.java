@@ -256,8 +256,7 @@ public class PillsNew extends AppCompatActivity {
 
 
         }
-        else if(page==3)
-        {
+        else if(page==3) {
             for (int i = 0; i < c; i++) {
 
                 String timeData = timeTextViewList.get(i).getText().toString(); // Получаем данные времени
@@ -265,36 +264,30 @@ public class PillsNew extends AppCompatActivity {
                 String type;
 
                 String selectedItem = PillsAdapter.getSelectedItemLabel();
-                if (selectedItem==null){
+                if (selectedItem == null) {
                     type = "Таблетка(и)";
-                }
-                else {
+                } else {
                     type = selectedItem;
                 }
 
                 // Получите текст из EditText
                 String text = edText.getText().toString().trim();
-                if(text.isEmpty()){
+                if (text.isEmpty()) {
                     text = "Лекарство";
 
                 }
 
-                GlobalVariables.addMedicineToCache(new Medicine(timeData+"", text+"",editTextNum2.getText().toString()+" "+type), this);
+                GlobalVariables.addMedicineToCache(new Medicine(timeData + "", text + "", editTextNum2.getText().toString() + " " + type), this);
                 //GlobalVariables.medicines.add(new Medicine(timeData+"", text+"",editTextNum.getText().toString()+" таблетка(и)"));
 
-                Log.d(LOG_TAG, edText.getText().toString()+ editTextNum2.getText().toString()+" "+type+ timeData);
+                Log.d(LOG_TAG, edText.getText().toString() + editTextNum2.getText().toString() + " " + type + timeData);
 
                 Toast.makeText(this, "Успешно сохранено!", Toast.LENGTH_SHORT).show();
                 finish();
-                }
+
             }
         }
-
-        //setContentView(llButtonsContainer);
-        }
-
-
-
+    }
 
     private void showTimePickerDialog(TextView targetView) {
         // Получаем текущее время

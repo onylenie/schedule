@@ -252,8 +252,6 @@ public class ScheduleNew extends AppCompatActivity {
 
                 Toast.makeText(this, "Успешно сохранено!", Toast.LENGTH_SHORT).show();
                 finish();
-
-                Log.d(LOG_TAG, "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
             }
         }
 
